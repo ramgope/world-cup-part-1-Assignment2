@@ -1,0 +1,289 @@
+/* ============ Font-Family section css start ============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Splash&display=swap');
+
+/* ============ Font-Family section css end ============ */
+
+/* ============ Common CSS section start ============ */
+a {
+    text-decoration: none;
+}
+
+/* ============ Common CSS section end ============ */
+
+/* ============ root-variable section css start ============ */
+:root {
+    --common-font: 'Poppins', sans-serif;
+    --button-color: #DD0000;
+    --common-color: #161616;
+}
+
+/* ============ root-variable section css end ============ */
+
+/* ============ Header section css start ============ */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.banner-bg {
+    width: 80%;
+    height: 450px;
+    background-color: #161616;
+    display: flex;
+    border-radius: 10px;
+}
+
+.banner-info {
+    width: 50%;
+    font-family: var(--common-font);
+    color: white;
+    padding-left: 110px;
+    margin: 0 auto;
+}
+
+.banner-info h1 {
+    font-size: 42px;
+    font-weight: 700;
+    padding-right: 70px;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.banner-info p {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.banner-info button {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--button-color);
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    transition: all linear 0.4s;
+}
+
+.banner-info button:hover {
+    background-color: goldenrod;
+}
+
+.banner-info button a {
+    color: #ffffff;
+}
+
+.banner-img {
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.banner-img img {
+    height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        width: 100%;
+        height: 1200px;
+    }
+
+    .banner-bg {
+        flex-direction: column;
+
+    }
+
+    .banner-info {
+        /* width: 50%; */
+        display: grid;
+        justify-content: right;
+    }
+
+    .banner-info h1 {
+        font-size: 14px;
+    }
+
+    .banner-img {
+        /* width: 50%; */
+        display: grid;
+        flex-direction: column;
+    }
+}
+
+/* ============ Header section css end ============ */
+
+/* ============ Main section css start ============ */
+main {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bg {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+.main-list {
+    width: 20%;
+    height: 200px;
+    background-color: var(--common-color);
+    border-radius: 5px;
+
+}
+
+.list-item {
+    padding: 10px 20px;
+    margin: 11px 20px;
+    font-family: var(--common-font);
+    font-weight: 500;
+    width: 160px;
+    border-radius: 5px;
+    cursor: text;
+}
+
+.main-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-news {
+    width: 245px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.news-item {
+    height: 250px;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.news-img {
+    display: inline-block;
+    height: 40%;
+}
+
+.news-img img {
+    width: 100%;
+    cursor: crosshair;
+}
+
+.news-info {
+    width: 100%;
+    height: 60%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.news-info button {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: text;
+    color: #000000;
+}
+
+.news-info p {
+    padding-right: 20px;
+}
+
+.news-info i {
+    padding-right: 15px;
+}
+
+.news-info i span {
+    padding-left: 5px;
+}
+
+@media screen and (min-widt: 577px) and (max-width: 992px) {
+    .main-list {
+        display: grid;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+}
+
+/* ============ Main section css end ============ */
+
+/* ============ Footer section css start ============ */
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: var(--common-color);
+    margin-top: 80px;
+}
+
+.upper-part {
+    padding-top: 50px;
+}
+
+.upper-part h2 {
+    color: rgb(255, 255, 255);
+    font-family: var(--common-font);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.upper-part hr {
+    border-bottom: .5px solid rgb(82, 82, 82);
+    width: 80%;
+}
+
+.lower-part {
+    margin-top: 40px;
+}
+
+.lower-part .gen-info {
+    color: rgb(197, 197, 197);
+    display: flex;
+    justify-content: center;
+}
+
+.lower-part .gen-info li {
+    list-style: none;
+    padding-right: 50px;
+    font-family: var(--common-font);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.lower-part .follow-us {
+    color: rgb(251, 255, 0);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-family: var(--common-font);
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.follow-us li a {
+    color: cyan;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        width: 100%;
+        justify-content: right;
+    }
+}
+
+/* ============ Footer section css end ============ */
